@@ -1,0 +1,65 @@
+.projectsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.projectCard {
+  padding: 12px;
+  background-color: #f8f5f7; /* Fond clair pour chaque carte */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .projectDescription {
+    padding: 15px;
+    color: #070506;
+
+    & p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #92436D; /* Titre avec la couleur principale */
+      margin-bottom: 10px;
+    }
+
+    .categoryWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+
+      .categoryChip {
+        background-color: #A1C9F1;
+        color: #070506;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
