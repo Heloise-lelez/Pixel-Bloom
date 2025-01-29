@@ -16,9 +16,12 @@
 }
 
 .link {
-  font-size: 24px;
+  font-size: 20px;
+  color: var(--accent);
+  padding: 8px 0;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .link:hover {
-  color: #a1c9f1;
+  color: var(--background);
 }

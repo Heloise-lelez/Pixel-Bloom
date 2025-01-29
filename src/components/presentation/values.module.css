@@ -5,20 +5,20 @@
   gap: 32px;
   margin-top: 64px;
 
-  p {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: x-large;
-    text-align: center;
-  }
-
   .card {
     background-color: var(--background);
     border-radius: 16px;
     border: 1px solid var(--foreground);
     width: 288px;
     padding: 16px;
+    box-shadow: 10px 10px 10px 0px rgba(155, 135, 130, 0.55);
   }
+}
+
+.cards h3 {
+  font-size: x-large;
+  text-align: center;
+}
+.cards p {
+  font-size: 20px;
 }

@@ -1,0 +1,52 @@
+.footer {
+  background-color: var(--primary);
+  color: var(--background);
+  font-size: 18px;
+  padding: 32px 64px;
+
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .title {
+    font-family: "argent-pixel-cf", sans-serif;
+    font-size: 34px;
+  }
+  .links p {
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 8px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .link {
+      color: var(--accent);
+      padding: 8px 0;
+      border-radius: 8px;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .link:hover {
+      color: var(--background);
+    }
+  }
+  .linksContainer {
+    display: flex;
+    gap: 64px;
+  }
+
+  .legal {
+    margin-top: 16px;
+    font-size: small;
+    text-align: center;
+  }
+}
