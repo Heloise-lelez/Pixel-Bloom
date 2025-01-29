@@ -1,0 +1,24 @@
+.nav {
+  background-color: #92436d;
+  color: #f8f5f7;
+  display: flex;
+  gap: 32px;
+  padding: 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.title {
+  font-family: "argent-pixel-cf", sans-serif;
+  font-size: 34px;
+}
+
+.link {
+  font-size: 24px;
+}
+
+.link:hover {
+  color: #a1c9f1;
+}

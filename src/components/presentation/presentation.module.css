@@ -1,0 +1,65 @@
+.presentation {
+  p {
+    text-align: center;
+    font-size: 40px;
+    padding: 8px;
+  }
+
+  .highlight {
+    color: var(--primary);
+    font-size: 32px;
+  }
+
+  .dark_highlight {
+    color: var(--darkprimary);
+    font-size: 32px;
+  }
+
+  .services_section {
+    display: flex;
+    padding: 64px 116px;
+    justify-content: center;
+    align-items: center;
+    gap: 112px;
+    flex-wrap: wrap;
+
+    p {
+      width: 456px;
+    }
+  }
+}
+.partnership,
+.values,
+.services {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.values {
+  background-color: var(--secondary);
+}
+
+.contact {
+  background-color: var(--secondary);
+  margin: 60px 130px;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.contact_button {
+  background: var(--background);
+  color: var(--primary);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 16px 32px;
+  outline: inherit;
+  font-size: 24px;
+}
