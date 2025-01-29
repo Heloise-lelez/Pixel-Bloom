@@ -1,0 +1,27 @@
+.pageContainer {
+    margin: auto;
+}
+
+.pageContainer {
+    padding: 32px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    .categoryWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 12px;
+
+        .categoryChip {
+            padding: 4px 12px;
+            border-radius: 30px;
+            border: 1px solid var(--twilightLavender);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,6 +1,9 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F8F5F7;
+  --foreground: #070506;
+  --twilightLavender: #92436D;
+  --silverPink: #C3ABA5;
+  --babyBlueEyes: #A1C9F1;
 }
 
 html,
