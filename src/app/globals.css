@@ -1,15 +1,27 @@
 :root {
-  --background: #F8F5F7;
+  --background: #f8f5f7;
   --foreground: #070506;
-  --twilightLavender: #92436D;
-  --silverPink: #C3ABA5;
-  --babyBlueEyes: #A1C9F1;
+
+  --primary: #92436d;
+  --secondary: #c3aba5;
+  --accent: #a1c9f1;
+  --darkprimary: #69304e;
+  --darkaccent: #416991;
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
 }
 
 * {

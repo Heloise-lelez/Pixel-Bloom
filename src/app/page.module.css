@@ -1,31 +1,26 @@
 .landing {
-  padding: 88px;
+  display: flex;
+  padding: 45px;
   height: 100vh;
   background-color: #c3aba5;
+}
+
+.main {
   position: relative;
+}
 
-  .title {
-    font-family: "argent-pixel-cf", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.title {
+  position: absolute;
+  font-family: "argent-pixel-cf", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
-    position: absolute;
-    left: 72px;
-    top: 72px;
+  font-size: 96px;
+  line-height: 110px;
+}
 
-    font-size: 96px;
-    line-height: 110px;
-  }
-
-  .banner {
-    display: flex;
-    align-items: center;
-  }
-
-  .slogan {
-    rotate: 90deg;
-    font-family: "argent-pixel-cf", sans-serif;
-
-    font-size: 96px;
-  }
+.slogan {
+  rotate: 90deg;
+  font-family: "argent-pixel-cf", sans-serif;
+  font-size: 96px;
 }
