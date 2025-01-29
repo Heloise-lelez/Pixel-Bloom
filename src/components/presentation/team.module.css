@@ -5,24 +5,24 @@
   gap: 32px;
   margin-top: 64px;
 
-  p {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: x-large;
-    text-align: center;
-  }
-
   .card {
     background-color: var(--background);
     border-radius: 16px;
     border: 1px solid var(--foreground);
     width: 288px;
     padding: 16px;
+    box-shadow: 10px 10px 10px 0px rgba(195, 171, 165, 0.55);
   }
 
   .image {
     object-fit: cover;
   }
+}
+
+.cards h3 {
+  font-size: x-large;
+  text-align: center;
+}
+.cards p {
+  font-size: 20px;
 }

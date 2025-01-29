@@ -18,11 +18,11 @@ const Navigation = () => {
         <Link className={styles.link} href="/projects">
           Nos projets
         </Link>
-        <Link className={styles.link} href="/contact">
-          Contactez-nous !
-        </Link>
         <Link className={styles.link} href="/agency">
           Notre Agence
+        </Link>
+        <Link className={styles.link} href="/contact">
+          Contactez-nous
         </Link>
       </ul>
     </>

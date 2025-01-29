@@ -1,18 +1,28 @@
 .presentation {
-  p {
-    text-align: center;
-    font-size: 40px;
-    padding: 8px;
-  }
-
-  .highlight {
+  .highlight_title {
     color: var(--primary);
-    font-size: 32px;
+    font-size: 24px;
   }
 
-  .dark_highlight {
+  .highlight_text {
+    color: var(--primary);
+    font-size: 20px;
+  }
+
+  .dark_highlight_title {
     color: var(--darkprimary);
-    font-size: 32px;
+    font-size: 24px;
+  }
+  .dark_highlight_text {
+    color: var(--darkprimary);
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 28px;
   }
 
   .services_section {
@@ -22,11 +32,16 @@
     align-items: center;
     gap: 112px;
     flex-wrap: wrap;
-
-    p {
-      width: 456px;
-    }
   }
+  .services_section p {
+    width: 456px;
+  }
+}
+
+.presentation p {
+  text-align: center;
+  font-size: 32px;
+  padding: 8px;
 }
 .partnership,
 .values,
@@ -41,6 +56,14 @@
   background-color: var(--secondary);
 }
 
+.gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(195, 171, 165, 1) 25%,
+    rgba(248, 245, 247, 1) 75%
+  );
+}
+
 .contact {
   background-color: var(--secondary);
   margin: 60px 130px;
@@ -51,6 +74,7 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+  box-shadow: 10px 10px 10px 0px rgba(195, 171, 165, 0.55);
 }
 
 .contact_button {
@@ -62,4 +86,8 @@
   padding: 16px 32px;
   outline: inherit;
   font-size: 24px;
+}
+
+.contact_button:hover {
+  background: var(--accent);
 }

@@ -1,0 +1,32 @@
+.banner {
+  background-color: var(--accent);
+  font-size: 32px;
+  border-top: 5px solid var(--darkaccent);
+  border-bottom: 5px solid var(--darkaccent);
+  overflow: hidden;
+}
+
+.text {
+  padding: 16px;
+  color: var(--darkaccent);
+  display: inline-block;
+  font-family: "argent-pixel-cf", sans-serif;
+  font-weight: bold;
+  padding-right: 2em;
+  padding-left: 100%;
+  white-space: nowrap;
+  animation: defilement-banner 8s infinite linear;
+}
+
+.text:hover {
+  animation-play-state: paused;
+}
+
+@keyframes defilement-banner {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

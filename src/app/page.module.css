@@ -1,6 +1,6 @@
 .landing {
   display: flex;
-  padding: 45px;
+  padding: 45px 144px;
   height: 100vh;
   background-color: #c3aba5;
 }
@@ -10,17 +10,40 @@
 }
 
 .title {
+  display: flex;
   position: absolute;
+  align-items: center;
+  top: 16px;
+}
+.title h1 {
   font-family: "argent-pixel-cf", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 88px;
+}
 
-  font-size: 96px;
-  line-height: 110px;
+.subtitle {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  font-family: "argent-pixel-cf", sans-serif;
+  font-size: 50px;
+}
+
+.subtitle div {
+  flex: 1 1 auto;
 }
 
 .slogan {
-  rotate: 90deg;
-  font-family: "argent-pixel-cf", sans-serif;
-  font-size: 96px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transform-origin: -30px 0;
+  transform: rotate(90deg) translateY(-200%);
+}
+
+.slogan span {
+  white-space: nowrap;
 }
