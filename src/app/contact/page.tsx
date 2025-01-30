@@ -9,8 +9,8 @@ const ContactPage = () => {
                 <Image
                     src={`contact.svg`}
                     alt="Messaging "
-                    width={500}
-                    height={500}
+                    width={643}
+                    height={528}
                 />
             </div>
 
