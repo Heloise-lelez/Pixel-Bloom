@@ -16,6 +16,7 @@ const ProjectPage = async ({params}: {params: Promise<{ id: string }>}) => {
     const segments = await params
     const id: string = segments.id
     const project = await getProjectById(id[0])
+    const technologies = JSON.parse(project.technologies)
 
     if (!project) {
         return (
@@ -37,7 +38,16 @@ const ProjectPage = async ({params}: {params: Promise<{ id: string }>}) => {
                     <strong>Objectives:</strong> {project.objectives ? project.objectives : "No objectives"}
                 </div>
                 <div className={styles.projectSection}>
-                    <strong>Technologies:</strong> {project.technologies ? project.technologies : "No technologies"}
+                    <strong>Technologies:</strong>
+                    {
+                        technologies.map((techno: string) => {
+                            return (
+                                <p>
+                                    {techno}
+                                </p>
+                            )
+                        })
+                    }
                 </div>
                 <div className={styles.projectSection}>
                     <strong>Results:</strong> {project.results ? project.results : "No results"}
