@@ -69,6 +69,7 @@
   align-items: center;
   flex-direction: column;
   padding: 60px;
+  overflow: hidden;
 }
 
 .values {
@@ -96,7 +97,7 @@
   box-shadow: 10px 10px 10px 0px rgba(195, 171, 165, 0.55);
 }
 
-.contact_button {
+.contactButton {
   background: var(--background);
   color: var(--primary);
   border: none;
@@ -105,8 +106,9 @@
   padding: 16px 32px;
   outline: inherit;
   font-size: 24px;
-}
 
-.contact_button:hover {
-  background: var(--accent);
+  &:hover {
+    transform: scale(1.09);
+    transition: all 0.3s ease-in-out;
+  }
 }

@@ -59,9 +59,10 @@ const Presentation = async () => {
       <div className={styles.values}>
         <p className={styles.title}>Ce qui nous guide au quotidien</p>
         <p className={styles.dark_highlight_text}>
-          Chez PIXEL BLOOM, nos valeurs sont au cœur de tout ce que nous
-          faisons. Elles reflètent notre engagement envers nos utilisateurs, nos
-          partenaires et la société dans son ensemble.
+          Nous concevons des expériences numériques uniques, alliant expertise
+          et créativité. Chaque projet est pensé pour être à la fois performant,
+          esthétique et porteur de valeur, avec une approche centrée sur
+          l'humain.
         </p>
         <ValuesCards cards={values} />
       </div>
@@ -88,7 +89,7 @@ const Presentation = async () => {
           Contactez-nous via notre formulaire de contact, nous reviendrons vers
           vous dans un délai de 24h.
         </p>
-        <Link className={styles.contact_button} href={"/contact"}>
+        <Link className={styles.contactButton} href={"/contact"}>
           Contactez-nous !
         </Link>
       </div>
