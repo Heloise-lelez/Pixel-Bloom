@@ -21,7 +21,14 @@
       padding: 4px 12px;
       border-radius: 30px;
       border: 1px solid var(--primary);
+      background-color: var(--background);
       cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .categoryChip:hover {
+      background-color: var(--primary);
+      color: var(--background);
     }
   }
 }

@@ -1,6 +1,7 @@
 import { Project } from "@prisma/client";
 import styles from "./projects.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const ProjectItem = ({ project }: { project: Project }) => {
   const technologies = JSON.parse(project.technologies);
@@ -8,7 +9,12 @@ const ProjectItem = ({ project }: { project: Project }) => {
   return (
     <div className={styles.projectCard}>
       <div className={styles.projectImage}>
-        <img src={project.imageUrl} alt="" />
+        <Image
+          src={project.imageUrl}
+          alt=""
+          width={project.imageWidth}
+          height={project.imageHeight}
+        />
       </div>
       <div className={styles.projectDescription}>
         <p>{project.title}</p>
@@ -22,8 +28,8 @@ const ProjectItem = ({ project }: { project: Project }) => {
           })}
         </div>
       </div>
-      <Link href={`/projects/${project.id}`}>
-        <div>Voir plus</div>
+      <Link className={styles.seeMore} href={`/projects/${project.id}`}>
+        <div>Voir plus → </div>
       </Link>
     </div>
   );
