@@ -4,6 +4,7 @@ import moment from "moment";
 import ErrorPage from "@/components/ErrorPage";
 import styles from "./page.module.css";
 import Image from "next/image";
+import {notFound} from "next/navigation";
 
 const getProjectById = async (id: string) => {
   const project = await db.project.findUnique({
@@ -19,7 +20,7 @@ const ProjectPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const technologies = project ? JSON.parse(project.technologies) : "";
 
   if (!project) {
-    return <ErrorPage code={404} />;
+    throw new Error("404");
   }
 
   return (
