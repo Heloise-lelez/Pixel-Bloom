@@ -22,12 +22,11 @@ const ContactForm = () => {
     return (
         <form action={formAction} className={styles.contactForm}>
             <div className={styles.inputContainer}>
-                <label>Nom Prénom</label>
+                <label>Nom prénom</label>
                 <input
                     type="text"
                     name="name"
                     defaultValue={state.name}
-                    placeholder="Entrez votre nom"
                     required
                 />
                 {state.errors?.name && <p className={styles.error}>{state.errors.name}</p>}
@@ -38,7 +37,6 @@ const ContactForm = () => {
                     type="email"
                     name="email"
                     defaultValue={state.email}
-                    placeholder="Entrez votre e-mail"
                     required
                 />
                 {state.errors?.email && <p className={styles.error}>{state.errors.email}</p>}

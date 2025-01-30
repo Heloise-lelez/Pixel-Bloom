@@ -16,6 +16,7 @@ export default function Home() {
               alt={"Pixel flower"}
               height={1302}
               width={1706}
+              priority
             />
             <h1>Pixel Bloom</h1>
           </div>

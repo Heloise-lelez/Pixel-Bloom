@@ -43,9 +43,10 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .contactForm button:hover {
-  background-color: #a1c9f1;
+  background-color: var(--accent);
+  color: var(--foreground);
 }

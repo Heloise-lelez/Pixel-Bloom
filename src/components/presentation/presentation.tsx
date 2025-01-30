@@ -53,7 +53,7 @@ const Presentation = async () => {
           </p>
         </div>
         <Link className={styles.projectBtn} href={"/projects"}>
-          Découvrir nos projet
+          Découvrir nos projets
         </Link>
       </div>
       <div className={styles.values}>
