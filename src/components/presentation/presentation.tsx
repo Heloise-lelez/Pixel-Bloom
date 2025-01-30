@@ -62,7 +62,7 @@ const Presentation = async () => {
           Nous concevons des expériences numériques uniques, alliant expertise
           et créativité. Chaque projet est pensé pour être à la fois performant,
           esthétique et porteur de valeur, avec une approche centrée sur
-          l`&apos;`humain.
+          l&apos;humain.
         </p>
         <ValuesCards cards={values} />
       </div>

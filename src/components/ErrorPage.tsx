@@ -7,7 +7,7 @@ const ErrorPage = async ({ code }: { code: number }) => {
       <div>
         <h1>Erreur 404</h1>
         <p>
-          La page que vous recherchez n`&apos;`existe pas, nous vous invitions à
+          La page que vous recherchez n&apos;existe pas, nous vous invitions à
           retourner sur le site en cliquant sur le lien ci-dessous.
         </p>
         <button>

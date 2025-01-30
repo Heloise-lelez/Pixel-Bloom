@@ -9,7 +9,7 @@ const AgencyPage = () => {
           <h1>Bienvenue chez Pixel Bloom</h1>
           <p>
             Chez <strong>Pixel Bloom</strong>, nous croyons en la puissance de
-            l`&apos;`innovation pour transformer vos idées en réalité numérique.
+            l&apos;innovation pour transformer vos idées en réalité numérique.
             Nous sommes une agence web dédiée à accompagner les entreprises dans
             la création de sites internet modernes, intuitifs et adaptés à leurs
             besoins.
@@ -53,7 +53,7 @@ const AgencyPage = () => {
             <p>
               Boostez votre visibilité en ligne avec des stratégies de marketing
               digital sur mesure. Nous mettons en place des campagnes
-              publicitaires, du SEO et des solutions d`&apos;`emailing pour
+              publicitaires, du SEO et des solutions d&apos;emailing pour
               générer du trafic et augmenter vos conversions.
             </p>
           </div>
@@ -61,9 +61,9 @@ const AgencyPage = () => {
             <h3>Stratégie digitale</h3>
             <p>
               Nous élaborons avec vous des stratégies digitales adaptées à vos
-              objectifs commerciaux, qu`&apos;`il s`&apos;`agisse de générer du
-              trafic, de renforcer votre image de marque ou d`&apos;`augmenter
-              vos conversions.
+              objectifs commerciaux, qu&apos;il s&apos;agisse de générer du
+              trafic, de renforcer votre image de marque ou d&apos;augmenter vos
+              conversions.
             </p>
           </div>
         </div>
@@ -91,7 +91,7 @@ const AgencyPage = () => {
           <div className={styles.whyItem}>
             <h3>Suivi continu</h3>
             <p>
-              Notre travail ne s`&apos;`arrête pas à la livraison de votre site.
+              Notre travail ne s&apos;arrête pas à la livraison de votre site.
               Nous vous accompagnons tout au long de la gestion et de
               l’évolution de votre présence en ligne.
             </p>
@@ -102,8 +102,8 @@ const AgencyPage = () => {
       <section className={styles.finalSection}>
         <h2>Rejoignez la famille Pixel Bloom</h2>
         <p>
-          Notre ambition est d`&apos;`aider les entreprises à s`&apos;`épanouir
-          dans le monde numérique, et ce, en créant des expériences uniques pour
+          Notre ambition est d&apos;aider les entreprises à s&apos;épanouir dans
+          le monde numérique, et ce, en créant des expériences uniques pour
           chaque client. Ensemble, faisons fleurir vos projets et offrons à
           votre entreprise une visibilité qui lui ressemble.
         </p>
