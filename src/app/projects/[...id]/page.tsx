@@ -1,10 +1,8 @@
 import React from "react";
 import db from "@/frameworks/db";
 import moment from "moment";
-import ErrorPage from "@/components/ErrorPage";
 import styles from "./page.module.css";
 import Image from "next/image";
-import {notFound} from "next/navigation";
 
 const getProjectById = async (id: string) => {
   const project = await db.project.findUnique({
