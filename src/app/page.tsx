@@ -11,15 +11,22 @@ export default function Home() {
         <div className={styles.main}>
           <div className={styles.title}>
             <Image
+              className={styles.logo}
               src={"/logo_transparent.png"}
               alt={"Pixel flower"}
-              height={96}
-              width={126}
+              height={1302}
+              width={1706}
             />
             <h1>Pixel Bloom</h1>
           </div>
           <div className={styles.banner}>
-            <img src="/vine_screen.svg" />
+            <Image
+              className={styles.illustration}
+              src="/vine_screen.svg"
+              alt={"Illustration of a girl sit on a computer screen"}
+              width={817}
+              height={771}
+            />
           </div>
         </div>
         <div className={styles.subtitle}>

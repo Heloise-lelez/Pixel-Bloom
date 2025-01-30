@@ -7,6 +7,10 @@
 
 .main {
   position: relative;
+
+  .banner .illustration {
+    width: 100%;
+  }
 }
 
 .title {
@@ -14,6 +18,11 @@
   position: absolute;
   align-items: center;
   top: 16px;
+
+  .logo {
+    width: 126px;
+    height: 96px;
+  }
 }
 .title h1 {
   font-family: "argent-pixel-cf", sans-serif;

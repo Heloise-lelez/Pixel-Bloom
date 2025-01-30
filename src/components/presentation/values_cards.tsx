@@ -1,40 +1,18 @@
 import Image from "next/image";
 import styles from "./values.module.css";
+import { Cards } from "@prisma/client";
 
-const values = [
-  {
-    title: "Innovation",
-    description: "Toujours chercher des solutions modernes et avant-gardistes.",
-    key: "innovation",
-  },
-  {
-    title: "Accessibilité",
-    description: "Rendre le web beau et fonctionnel pour tout le monde.",
-    key: "accessibility",
-  },
-  {
-    title: "Écoute",
-    description: "Comprendre chaque client pour refléter sa vision unique.",
-    key: "listening",
-  },
-  {
-    title: "Durabilité",
-    description:
-      "Concevoir des solutions numériques respectueuses de l'environnement.",
-    key: "durability",
-  },
-];
-
-const ValuesCards = () => {
+const ValuesCards = ({ cards }: { cards: Cards[] }) => {
   return (
     <div className={styles.cards}>
-      {values.map((value) => (
-        <div className={styles.card} key={value.key}>
+      {cards.map((value) => (
+        <div className={styles.card} key={value.imgName}>
           <Image
-            src={`${value.key}.svg`}
+            className={styles.illustration}
+            src={`${value.imgName}.svg`}
             alt="Team working"
-            width={200}
-            height={200}
+            width={value.width}
+            height={value.height}
           />
           <h3>{value.title}</h3>
           <p>{value.description}</p>
