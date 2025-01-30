@@ -2,7 +2,7 @@ import styles from "./page.module.css"
 import ContactForm from "@/components/contact/contactForm";
 import Image from "next/image";
 
-const Page = () => {
+const ContactPage = () => {
     return (
         <div className={styles.pageContainer}>
             <div className={styles.contactImage}>
@@ -23,4 +23,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default ContactPage
