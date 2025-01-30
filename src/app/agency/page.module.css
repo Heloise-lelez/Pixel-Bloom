@@ -143,3 +143,30 @@
     border-radius: 8px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .introSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .imageContainer img {
+    width: 50% !important;
+    height: auto;
+  }
+
+  .serviceItems, .whyChooseItems {
+    flex-direction: column;
+  }
+
+}
