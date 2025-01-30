@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Page = () => {
     return (
-        <>
+        <div className={styles.pageContainer}>
             <div className={styles.contactImage}>
                 <Image
                     src={`contact.svg`}
@@ -19,7 +19,7 @@ const Page = () => {
                 <p>Vous cherchez une agence web de confiance pour votre projet  ? Contactez-nous et découvrez comment nous pouvons vous aider.</p>
                 <ContactForm />
             </div>
-        </>
+        </div>
     )
 }
 

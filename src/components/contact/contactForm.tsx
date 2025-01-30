@@ -4,14 +4,20 @@ import styles from "./contact.module.css";
 import { createContact } from "../../../actions";
 import { useActionState } from "react";
 import {IContactForm} from "@/types/IContact";
+import {toast} from "react-toastify"
 
 const ContactForm = () => {
+
     const [state, formAction] = useActionState<IContactForm, FormData>(createContact, {
         name: "",
         email: "",
         message: "",
         errors: {},
     });
+
+    const handleSuccess = () => {
+        toast.success("Message envoyé avec succès !");
+    };
 
     return (
         <form action={formAction} className={styles.contactForm}>
@@ -49,7 +55,7 @@ const ContactForm = () => {
                 {state.errors?.message && <p className={styles.error}>{state.errors.message}</p>}
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" onClick={handleSuccess}>Envoyer</button>
         </form>
     );
 };
