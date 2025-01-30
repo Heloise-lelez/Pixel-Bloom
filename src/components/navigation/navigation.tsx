@@ -39,20 +39,14 @@ const Navigation = () => {
           isOpen ? styles.menuOpen : styles.menuClosed
         }`}
       >
-        <li>
-          <Link className={styles.link} href="/projects">
-            Nos projets
-          </Link>
+        <li className={styles.link}>
+          <Link href="/projects">Nos projets</Link>
         </li>
-        <li>
-          <Link className={styles.link} href="/agency">
-            Notre Agence
-          </Link>
+        <li className={styles.link}>
+          <Link href="/agency">Notre Agence</Link>
         </li>
-        <li>
-          <Link className={styles.link} href="/contact">
-            Contactez-nous
-          </Link>
+        <li className={styles.link}>
+          <Link href="/contact">Contactez-nous</Link>
         </li>
       </ul>
     </nav>
