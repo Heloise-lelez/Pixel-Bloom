@@ -3,6 +3,29 @@ import styles from "./projects.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+const getTechnoName = (value: string) => {
+    switch (value) {
+        case "react":
+            return "React.js";
+        case "next":
+            return "Next.js";
+        case "node":
+            return "Node.js";
+        case "dynamo":
+            return "DynamoDB";
+        case "postgre":
+            return "PostgreSQL";
+        case "datadog":
+            return "Datadog";
+        case "aws":
+            return "AWS CloudWatch";
+        case "prometheus":
+            return "Prometheus";
+        default:
+            return;
+    }
+}
+
 const ProjectItem = ({ project }: { project: Project }) => {
   const technologies = JSON.parse(project.technologies);
 
@@ -22,7 +45,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
           {technologies.map((techno: string) => {
             return (
               <div className={styles.categoryChip} key={techno}>
-                {techno}
+                {getTechnoName(techno)}
               </div>
             );
           })}
