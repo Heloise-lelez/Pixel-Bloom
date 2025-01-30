@@ -56,3 +56,44 @@
 .slogan span {
   white-space: nowrap;
 }
+
+@media screen and (max-width: 800px) {
+  .landing {
+    padding: 8px;
+    height: 100vh;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .title {
+    top: 16px;
+    .logo {
+      width: 126px;
+      height: 96px;
+    }
+  }
+  .title h1 {
+    font-size: 64px;
+    margin-left: 32px;
+  }
+
+  .subtitle {
+    position: static;
+
+    display: flex;
+    font-family: "argent-pixel-cf", sans-serif;
+    font-size: 24px;
+  }
+
+  .slogan {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    transform-origin: 0 0;
+    transform: rotate(0) translateY(-0%);
+  }
+
+  .banner .illustration {
+    height: 80vh;
+  }
+}
