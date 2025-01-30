@@ -1,5 +1,5 @@
 import {Project} from "@prisma/client"
-import ProjectItem from "@/components/projects/ProjectItem";
+import ProjectItem from "@/components/projects/projectItem";
 import styles from "./projects.module.css"
 
 const ProjectsList = ({projects}: {projects: Project[]}) => {
