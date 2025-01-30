@@ -12,6 +12,11 @@
     width: 288px;
     padding: 16px;
     box-shadow: 10px 10px 10px 0px rgba(155, 135, 130, 0.55);
+
+    .illustration {
+      width: 100%;
+      height: 200px;
+    }
   }
 }
 

@@ -27,3 +27,13 @@ model Contact {
   email   String
   message String
 }
+
+model Cards {
+  id          String @id @default(uuid())
+  title       String
+  type        String
+  description String
+  imgName     String
+  width       Int
+  height      Int
+}

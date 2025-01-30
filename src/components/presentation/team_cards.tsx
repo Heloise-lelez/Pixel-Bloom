@@ -1,35 +1,15 @@
 import styles from "./team.module.css";
 import Image from "next/image";
+import { Cards } from "@prisma/client";
 
-const team = [
-  {
-    title: "CEO",
-    description:
-      "Visionnaire et passionnée par l'innovation numérique, elle guide Pixel Bloom vers des solutions créatives et durables.",
-    key: "ceo",
-  },
-  {
-    title: "CTO",
-    description:
-      "Experte en technologies web, elle façonne l’architecture et l’innovation technique de Pixel Bloom.",
-    key: "CTO",
-  },
-  {
-    title: "Happiness Manager",
-    description:
-      "Avec douceur et espièglerie, ils veillent au bien-être de l'équipe et apportent une touche de sérénité à Pixel Bloom 😊🐾",
-    key: "cats",
-  },
-];
-
-const TeamCards = () => {
+const TeamCards = ({ cards }: { cards: Cards[] }) => {
   return (
     <>
       <div className={styles.cards}>
-        {team.map((member) => (
-          <div className={styles.card} key={member.key}>
+        {cards.map((member) => (
+          <div className={styles.card} key={member.imgName}>
             <Image
-              src={`/${member.key}.webp`}
+              src={`/${member.imgName}.webp`}
               alt={`Picture of our ${member.title}`}
               width={250}
               height={250}
