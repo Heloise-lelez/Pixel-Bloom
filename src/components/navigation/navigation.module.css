@@ -2,38 +2,47 @@
   background-color: #92436d;
   color: #f8f5f7;
   display: flex;
-  gap: 32px;
   align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 100;
 }
 
 .title {
-  font-family: "argent-pixel-cf", sans-serif;
-  font-size: 34px;
+  padding: 0 32px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+  font-family: "argent-pixel-cf", sans-serif;
+  font-size: 34px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
 }
 
 .link {
-  font-size: 20px;
-  color: var(--background);
   padding: 32px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
+
 .link:hover {
   background-color: var(--background);
   color: var(--primary);
 }
 
 .burgerIcon {
-  display: flex;
+  display: none;
   flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
+  gap: 5px;
   cursor: pointer;
 }
 
@@ -41,54 +50,51 @@
   width: 30px;
   height: 4px;
   background-color: var(--background);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   border-radius: 1px;
 }
 
-.burgerOpen {
-  transform: rotate(45deg);
-  background-color: #070506;
-}
+.openTop { transform: rotate(45deg) translate(5px, 6px); }
+.openMiddle { opacity: 0; }
+.openBottom { transform: rotate(-45deg) translate(5px, -6px); }
 
-.burgerOpen:nth-child(2) {
-  opacity: 0;
-}
+@media screen and (max-width: 800px) {
+  .nav {
+    padding: 32px;
+  }
 
-.burgerOpen:nth-child(3) {
-  transform: rotate(-45deg);
-}
-
-.menuClosed {
-  display: none;
-}
-
-.menuOpen {
-  display: block;
-  background-color: #f8f5f7;
-  width: 100%;
-  padding-top: 20px;
-  text-align: center;
-}
-
-/* Responsive adjustments */
-@media (min-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .title {
+    padding: 0;
   }
 
   .burgerIcon {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #92436d;
+    border-top: 1px solid #f8f5f7;
+    text-align: center;
+    padding: 20px 0;
     display: none;
   }
 
   .menuOpen {
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    gap: 0;
+  }
+
+  .link {
+    padding: 24px;
   }
 
   .menuClosed {
-    display: flex;
+    display: none;
   }
 }

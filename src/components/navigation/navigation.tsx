@@ -1,82 +1,35 @@
-'use client'
+'use client';
 
-import {useState} from "react";
+import { useState } from "react";
 import Link from "next/link";
-import styles from "./navigation.module.css";
 import Image from "next/image";
+import styles from "./navigation.module.css";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState("");
+    const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+    const toggleMenu = () => setIsOpen(!isOpen);
 
-  const openModal = (content: string) => {
-    setModalContent(content);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => setIsModalOpen(false);
-
-  return (
-    <>
-      <div className={styles.nav}>
-        <Link className={styles.title} href="/">
-          <Image
-              src={"/logo_transparent.png"}
-              alt={"Pixel flower"}
-              height={44}
-              width={58}
-          />
-          PIXEL BLOOM{" "}
-        </Link>
-
-        <div className={styles.burgerIcon} onClick={toggleMenu}>
-          <div className={isOpen ? styles.burgerOpen : styles.burgerLine}></div>
-          <div className={isOpen ? styles.burgerOpen : styles.burgerLine}></div>
-          <div className={isOpen ? styles.burgerOpen : styles.burgerLine}></div>
-        </div>
-
-        {/* Menu items */}
-        <ul className={styles.menuDesktop}>
-          <li>
-            <Link className={styles.link} href="/projects" onClick={() => openModal('Projects Content')}>
-              Nos projets
+    return (
+        <nav className={styles.nav}>
+            <Link className={styles.title} href="/">
+                <Image src="/logo_transparent.png" alt="Pixel Bloom" height={44} width={58} />
+                PIXEL BLOOM
             </Link>
-          </li>
-          <li>
-            <Link className={styles.link} href="/agency" onClick={() => openModal('Agency Content')}>
-              Notre Agence
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.link} href="/contact" onClick={() => openModal('Contact Content')}>
-              Contactez-nous
-            </Link>
-          </li>
-        </ul>
 
-        <ul className={isOpen ? styles.menuOpen : styles.menuClosed}>
-          <li>
-            <Link className={styles.link} href="/projects" onClick={() => openModal('Projects Content')}>
-              Nos projets
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.link} href="/agency" onClick={() => openModal('Agency Content')}>
-              Notre Agence
-            </Link>
-          </li>
-          <li>
-            <Link className={styles.link} href="/contact" onClick={() => openModal('Contact Content')}>
-              Contactez-nous
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
-  );
+            <div className={styles.burgerIcon} onClick={toggleMenu}>
+                <div className={`${styles.burgerLine} ${isOpen ? styles.openTop : ""}`}></div>
+                <div className={`${styles.burgerLine} ${isOpen ? styles.openMiddle : ""}`}></div>
+                <div className={`${styles.burgerLine} ${isOpen ? styles.openBottom : ""}`}></div>
+            </div>
+
+            <ul className={`${styles.menu} ${isOpen ? styles.menuOpen : styles.menuClosed}`}>
+                <Link className={styles.link} href="/projects"><li>Nos projets</li></Link>
+                <Link className={styles.link} href="/agency"><li>Notre Agence</li></Link>
+                <Link className={styles.link} href="/contact"><li>Contactez-nous</li></Link>
+            </ul>
+        </nav>
+    );
 };
 
 export default Navigation;
