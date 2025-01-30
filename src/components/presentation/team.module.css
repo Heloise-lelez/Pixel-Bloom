@@ -12,6 +12,11 @@
     width: 288px;
     padding: 16px;
     box-shadow: 10px 10px 10px 0px rgba(195, 171, 165, 0.55);
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.5s ease-in-out;
+    }
   }
 
   .image {
