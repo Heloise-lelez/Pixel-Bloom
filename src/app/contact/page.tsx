@@ -8,7 +8,7 @@ const ContactPage = () => {
             <div className={styles.contactImage}>
                 <Image
                     src={`contact.svg`}
-                    alt="Messaging "
+                    alt="Messaging"
                     width={643}
                     height={528}
                 />

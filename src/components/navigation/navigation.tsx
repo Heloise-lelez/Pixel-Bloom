@@ -15,7 +15,7 @@ const Navigation = () => {
       <Link className={styles.title} href="/">
         <Image
           src="/logo_transparent.png"
-          alt="Pixel Bloom"
+          alt="Pixel Flower logo"
           height={44}
           width={58}
         />
