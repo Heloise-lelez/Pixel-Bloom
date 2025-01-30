@@ -2,25 +2,99 @@
   background-color: #92436d;
   color: #f8f5f7;
   display: flex;
-  gap: 32px;
   align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
+  width: 100%;
   z-index: 100;
 }
 
 .title {
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
   font-family: "argent-pixel-cf", sans-serif;
   font-size: 34px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
 }
 
 .link {
-  font-size: 20px;
-  color: var(--background);
   padding: 32px;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
+
 .link:hover {
   background-color: var(--background);
   color: var(--primary);
+}
+
+.burgerIcon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burgerLine {
+  width: 30px;
+  height: 4px;
+  background-color: var(--background);
+  transition: 0.3s ease-in-out;
+  border-radius: 1px;
+}
+
+.openTop { transform: rotate(45deg) translate(5px, 6px); }
+.openMiddle { opacity: 0; }
+.openBottom { transform: rotate(-45deg) translate(5px, -6px); }
+
+@media screen and (max-width: 800px) {
+  .nav {
+    padding: 32px;
+  }
+
+  .title {
+    padding: 0;
+  }
+
+  .burgerIcon {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #92436d;
+    border-top: 1px solid #f8f5f7;
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .menuOpen {
+    padding: 0;
+    display: flex;
+    gap: 0;
+  }
+
+  .link {
+    padding: 24px;
+  }
+
+  .menuClosed {
+    display: none;
+  }
 }
