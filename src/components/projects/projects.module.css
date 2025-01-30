@@ -72,3 +72,42 @@
     color: var(--foreground);
   }
 }
+
+.categoryWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.categoryChip {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  background-color: var(--background);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.categoryChip:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.categoryChipSelected {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary) !important;
+  color: var(--background);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.categoryChipSelected:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
