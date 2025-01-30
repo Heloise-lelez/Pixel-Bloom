@@ -24,6 +24,8 @@
     font-weight: bold;
     padding-bottom: 8px;
     font-family: "argent-pixel-cf", sans-serif;
+    padding: 0 8px;
+    margin-bottom: 16px;
   }
   .links {
     display: flex;
@@ -31,13 +33,14 @@
     gap: 4px;
 
     .link {
-      color: var(--accent);
-      padding: 8px 0;
+      color: var(--background);
+      padding: 8px;
       border-radius: 8px;
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     }
     .link:hover {
-      color: var(--background);
+      background-color: var(--background);
+      color: var(--primary);
     }
   }
   .linksContainer {

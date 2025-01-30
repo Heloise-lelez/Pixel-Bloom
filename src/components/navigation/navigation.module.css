@@ -3,7 +3,6 @@
   color: #f8f5f7;
   display: flex;
   gap: 32px;
-  padding: 20px;
   align-items: center;
   position: sticky;
   top: 0;
@@ -17,11 +16,11 @@
 
 .link {
   font-size: 20px;
-  color: var(--accent);
-  padding: 8px 0;
-  border-radius: 8px;
+  color: var(--background);
+  padding: 32px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .link:hover {
-  color: var(--background);
+  background-color: var(--background);
+  color: var(--primary);
 }
