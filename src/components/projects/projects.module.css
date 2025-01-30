@@ -42,7 +42,7 @@
     & p {
       font-size: 18px;
       font-weight: bold;
-      color: #92436D; /* Titre avec la couleur principale */
+      color: #92436d; /* Titre avec la couleur principale */
       margin-bottom: 10px;
     }
 
@@ -53,7 +53,7 @@
       margin-top: 10px;
 
       .categoryChip {
-        background-color: #A1C9F1;
+        background-color: #a1c9f1;
         color: #070506;
         padding: 6px 12px;
         border-radius: 20px;
@@ -61,5 +61,14 @@
         font-weight: 500;
       }
     }
+  }
+
+  .seeMore div {
+    text-align: end;
+    color: var(--primary);
+  }
+
+  .seeMore div:hover {
+    color: var(--foreground);
   }
 }

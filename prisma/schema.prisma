@@ -17,6 +17,8 @@ model Project {
   createdAt    DateTime @default(now())
   imageUrl     String
   videoUrl     String
+  imageWidth   Int
+  imageHeight  Int
 }
 
 model Contact {
