@@ -1,5 +1,6 @@
 import { Project } from "@prisma/client";
 import styles from "./projects.module.css";
+import Link from "next/link";
 
 const ProjectItem = ({ project }: { project: Project }) => {
   const technologies = JSON.parse(project.technologies);
@@ -21,9 +22,9 @@ const ProjectItem = ({ project }: { project: Project }) => {
           })}
         </div>
       </div>
-      <a href={`/projects/${project.id}`}>
+      <Link href={`/projects/${project.id}`}>
         <div>Voir plus</div>
-      </a>
+      </Link>
     </div>
   );
 };
