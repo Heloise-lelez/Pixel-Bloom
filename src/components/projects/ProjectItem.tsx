@@ -29,7 +29,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
         </div>
       </div>
       <Link className={styles.seeMore} href={`/projects/${project.id}`}>
-        <div>Voir plus</div>
+        <div>Voir plus → </div>
       </Link>
     </div>
   );

@@ -63,7 +63,12 @@
     }
   }
 
-  .seeMore {
+  .seeMore div {
     text-align: end;
+    color: var(--primary);
+  }
+
+  .seeMore div:hover {
+    color: var(--foreground);
   }
 }
